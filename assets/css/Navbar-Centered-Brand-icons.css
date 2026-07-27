@@ -55,3 +55,10 @@
   border-radius: 50%;
 }
 
+@media (min-width: 1200px) {
+  .xl-big-text {
+    font-size: 1.25rem !important;
+    line-height: 1.6;
+  }
+}
+

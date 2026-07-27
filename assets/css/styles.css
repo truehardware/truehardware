@@ -1,0 +1,53 @@
+@media (min-width: 1200px) {
+  .xl-big-text {
+    font-size: 1.5rem !important;
+    line-height: 1.6;
+  }
+}
+
+@media (min-width:1200px) {
+  .h1, h1 {
+    font-size: 3.0rem;
+  }
+}
+
+/* 1. Base style: Applies to Mobile, Tablet, & Laptop */
+
+.xl-big-text {
+  font-size: 21.4px;
+}
+
+/* 2. XL/XXL style: Applies ONLY to screens 1200px and wider */
+
+@media (min-width: 1200px) {
+  .xl-page-title {
+    font-size: 42px !important;
+  }
+}
+
+body {
+  font-size: clamp(1rem, 0.92rem + 0.4vw, 1.2rem) !important;
+  line-height: 1.65 !important;
+}
+
+p {
+  max-width: 68ch !important;
+  margin-bottom: 1.25rem !important;
+}
+
+h1, .display-1, .h1 {
+  font-size: clamp(1.75rem, 1.1rem + 2.8vw, 3.25rem) !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.02em !important;
+}
+
+h2, .display-2, .h2 {
+  font-size: clamp(1.35rem, 0.95rem + 1.8vw, 2.25rem) !important;
+  line-height: 1.25 !important;
+}
+
+ul, ol {
+  font-size: clamp(0.95rem, 0.88rem + 0.35vw, 1.15rem) !important;
+  line-height: 1.6 !important;
+}
+

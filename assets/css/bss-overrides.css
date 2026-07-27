@@ -3,3 +3,41 @@
   --bs-body-bg-rgb: 208,184,184;
 }
 
+.aspect-ratio-1x1 {
+  aspect-ratio: 1/1;
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+[data-bss-view-transition-name=Chap1] {
+  view-transition-name: Chap1;
+}
+
+::view-transition-old(root) {
+  animation: 300ms ease-out both bss-page-view-transition-old;
+}
+
+@keyframes bss-page-view-transition-old {
+from {
+  opacity: 1;
+}
+to {
+  opacity: 0;
+}
+}
+
+::view-transition-new(root) {
+  animation: 300ms ease-out both bss-page-view-transition-new;
+}
+
+@keyframes bss-page-view-transition-new {
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
+}
+
